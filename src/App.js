@@ -1,32 +1,51 @@
-// import logo from './logo.svg';
+import {Component, StrictMode} from 'react';
 import './App.css';
 
 const Header = () => {
     return <h2>Hello World!</h2>
 }
 
-const Field = () => {
-	return <input placeholder='Type here' type="text" />
-}
+// const Fields = () => {
+// 	const holder = 'Enter here';
+// 	const styledField = {
+// 		width: '300px'
+// 	}
+// 	return <input placeholder={holder}
+// 				  type="text" 
+// 				  style={styledField } />
+// }
 
 function Btn() {
 	const text = 'Log in';
-	const res = () => {
-		return 'Log in';
-	}
-	const p = <p>Log in</p>
-	return <button>{p}</button>
+	const logged = true;
+	return <button>{logged ? 'Enter' : text}</button>
 }
+
+class Fields extends Component {
+	render() {
+		const holder = 'Enter here';
+		const styledField = {
+			width: '300px'
+		}
+		return <input 
+					placeholder={holder}
+					type="text" 
+					style={styledField } />
+	}
+}		
 
 function App() {
   	return (
     	<div className="App">
-			<Header/>
-			<Field/>
+			<StrictMode>
+				<Header/>
+			</StrictMode>
+			<Fields/>
 			<Btn/>
     	</div>
   	);
 }
 
+export {Header};
 export default App;
  
