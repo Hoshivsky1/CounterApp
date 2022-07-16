@@ -1,6 +1,11 @@
 # Link codepen CounterApp
 https://codepen.io/Hoshivskyi/pen/vYRyPLB
 
+#Install
+```
+npm install
+```
+
 ## Available Scripts
 
 In the project directory, you can run:
