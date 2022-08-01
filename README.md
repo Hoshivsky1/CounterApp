@@ -1,6 +1,3 @@
-# Link codepen CounterApp
-https://codepen.io/Hoshivskyi/pen/vYRyPLB
-
 #Install
 ```
 npm install
